@@ -5,53 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
+* Deep dive into VPC networking concepts
+* Learn S3 storage service and best practices
+* Understand IAM policies and roles
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks carried out:
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Date | Status |
+|-----|------|------|--------|
+| Mon | - Study VPC basics (subnets, route tables, internet gateway) <br> - Learn about public vs private subnets <br> - Security Groups vs NACLs | 11/11/2025 | ✅ Done |
+| Tue | - Create custom VPC with public/private subnets <br> - Configure route tables <br> - Setup NAT Gateway <br> - Test EC2 in private subnet | 11/12/2025 | ✅ Done |
+| Wed | - Learn S3 fundamentals (buckets, objects, storage classes) <br> - Study S3 security (bucket policies, ACLs) <br> - S3 versioning and lifecycle policies | 11/13/2025 | ✅ Done |
+| Thu | - Create S3 buckets <br> - Upload/download files via Console & CLI <br> - Configure bucket policies <br> - Enable versioning and encryption | 11/14/2025 | ✅ Done |
+| Fri | - Learn IAM basics (users, groups, roles, policies) <br> - Study principle of least privilege <br> - Create IAM policies for EC2 and S3 access | 11/15/2025 | ✅ Done |
 
+### Achievements:
+* ✅ Created custom VPC with proper network segmentation
+* ✅ Deployed EC2 instances in public and private subnets
+* ✅ Configured NAT Gateway for private subnet internet access
+* ✅ Created and managed S3 buckets with proper security
+* ✅ Implemented IAM policies following least privilege principle
 
-### Week 2 Achievements:
+### Key Learnings:
+* VPC architecture and subnet design best practices
+* Difference between Security Groups (stateful) and NACLs (stateless)
+* S3 storage classes and cost optimization strategies
+* IAM policy structure and permission boundaries
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Challenges:
+* NAT Gateway routing issues → Fixed route table associations
+* S3 bucket policy syntax errors → Used AWS Policy Generator
+* IAM permission denied errors → Reviewed CloudTrail logs
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Next Week:
+* RDS and database management
+* CloudFormation basics
+* Monitoring with CloudWatch

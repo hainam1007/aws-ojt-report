@@ -9,51 +9,43 @@ pre: " <b> 1.4. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 4:
+* Hiểu cơ bản về bảo mật trên AWS
+* Biết cách quản lý tài nguyên bằng tags
+* Biết tạo IAM role và policy
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày | Trạng thái |
+|-----|-----------|------|------------|
+| Hai | - Tạo CloudFormation stack <br> - Amazon Tag (DSD & ABAC) <br> - Bật shadow copies, user storage quotas và continuous access share <br> - Scale storage và throughput capacity | 25/11/2025 | ✅ Hoàn thành |
+| Ba | - Học các dịch vụ security trên AWS (Shared Responsibility Model, IAM, Amazon Cognito, AWS Organizations, KMS) | 26/11/2025 | ✅ Hoàn thành |
+| Tư | - Bật Security Hub <br> - Tạo tags cho instances <br> - Tạo role cho Lambda function <br> - Quản lý tài nguyên bằng tags và resource groups | 27/11/2025 | ✅ Hoàn thành |
+| Năm | - Tạo IAM policy và role <br> - Tạo Restriction Policy và IAP limited user <br> - Tạo key management service, AWS CloudTrail và Amazon Athena <br> - Share encrypted data trên S3 | 28/11/2025 | ✅ Hoàn thành |
+| Sáu | - Tạo IAM Groups, IAM User <br> - Cấu hình role condition <br> - Truy cập ứng dụng qua accesskey và IAM role trên EC2 | 29/11/2025 | ✅ Hoàn thành |
 
+### Kết quả đạt được:
+* ✅ Hiểu về AWS security fundamentals (Shared Responsibility Model, IAM, Cognito, Organizations, KMS)
+* ✅ Tạo và cấu hình IAM roles và policies
+* ✅ Triển khai chiến lược resource tagging để quản lý tốt hơn
+* ✅ Thiết lập AWS Security Hub để giám sát bảo mật
+* ✅ Cấu hình CloudTrail cho audit logging
 
-### Kết quả đạt được tuần 4:
+### Bài học chính:
+* Nguyên tắc AWS Shared Responsibility Model
+* Cấu trúc IAM policy và best practices
+* Resource tagging cho phân bổ chi phí và tổ chức
+* Security Hub findings và compliance checks
+* Phân tích CloudTrail logs với Athena
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thách thức:
+* Lỗi cú pháp IAM policy → Dùng AWS Policy Simulator để test
+* Áp dụng tags → Triển khai Service Control Policies (SCPs)
+* KMS key rotation → Cấu hình automatic key rotation
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Tuần tới:
+* Load balancing và Auto Scaling
+* CloudWatch monitoring và alarms
+* Lambda serverless functions
 
 

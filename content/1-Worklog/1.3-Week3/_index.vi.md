@@ -9,51 +9,44 @@ pre: " <b> 1.3. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 3:
+* Hiểu sâu về EC2 và S3 services
+* Học cách import virtual machines vào AWS
+* Export virtual machines từ EC2 instance và AMI
+* Mount file sharing trên on-premise machine
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày | Trạng thái |
+|-----|-----------|------|------------|
+| Hai | - Học EC2 cơ bản (instance types, user data, metadata) <br> - Tìm hiểu EC2 auto scaling (EFA/SR, Lightsail, MGN) | 18/11/2025 | ✅ Hoàn thành |
+| Ba | - Tạo S3 bucket <br> - Upload objects <br> - Deploy web bằng S3 <br> - Tăng tốc static web với CloudFront | 19/11/2025 | ✅ Hoàn thành |
+| Tư | - Tạo Storage Gateway <br> - Tạo File Shares <br> - Mount File Shares vào on-premise machine <br> - Tạo backup plan <br> - Thiết lập notifications | 20/11/2025 | ✅ Hoàn thành |
+| Năm | - Học S3 nâng cao (access point, storage class, static website & CORS, Glacier, Snow Family, Storage Gateway, Backup) | 21/11/2025 | ✅ Hoàn thành |
+| Sáu | - Import virtual machine vào AWS <br> - Deploy instance từ AMI <br> - Export VM từ EC2 instance và AMI qua S3 bucket | 22/11/2025 | ✅ Hoàn thành |
 
+### Kết quả đạt được:
+* ✅ Thành thạo các instance types và scaling options của EC2
+* ✅ Tạo và cấu hình S3 buckets cho static website hosting
+* ✅ Deploy CloudFront distribution để tăng tốc content
+* ✅ Thiết lập Storage Gateway cho hybrid cloud storage
+* ✅ Import/export virtual machines thành công
 
-### Kết quả đạt được tuần 3:
+### Bài học chính:
+* Sử dụng EC2 user data và metadata
+* Các storage classes của S3 và tối ưu chi phí
+* Cấu hình CloudFront CDN
+* Các loại Storage Gateway (File, Volume, Tape)
+* Quy trình import/export VM qua AWS CLI
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thách thức:
+* Cấu hình CORS cho S3 static website → Sửa policy settings
+* Vấn đề kết nối Storage Gateway → Điều chỉnh security groups
+* Lỗi format khi import VM → Convert sang định dạng OVA
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Tuần tới:
+* Deploy RDS database
+* Load balancing với ELB
+* Auto Scaling groups
 
 

@@ -5,53 +5,39 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 1 Objectives:
+* Get acquainted with First Cloud Journey team
+* Learn AWS basics and setup environment
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks carried out:
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Date | Status |
+|-----|------|------|--------|
+| Mon | - Meet FCJ team <br> - Read internship guidelines <br> - Setup dev environment | 11/04/2025 | ✅ Done |
+| Tue | - Study AWS service categories (Compute, Storage, Networking, Database) <br> - Review AWS global infrastructure | 11/05/2025 | ✅ Done |
+| Wed | - Create AWS Free Tier account <br> - Setup MFA <br> - Install AWS CLI v2 | 11/06/2025 | ✅ Done |
+| Thu | - Learn EC2 basics (instance types, AMI, Security Groups) <br> - Study SSH connection methods | 11/07/2025 | ✅ Done |
+| Fri | - Launch EC2 instance (t2.micro, Ubuntu) <br> - Configure Security Group <br> - SSH connection <br> - Attach EBS volume | 11/08/2025 | ✅ Done |
 
+### Achievements:
+* ✅ Successfully created AWS account with MFA
+* ✅ Installed and configured AWS CLI
+* ✅ Launched first EC2 instance
+* ✅ Connected via SSH successfully
+* ✅ Mounted EBS volume to `/data`
 
-### Week 1 Achievements:
+### Key Learnings:
+* AWS service categories and use cases
+* Security Group configuration importance
+* Basic EC2 instance management
+* AWS CLI commands for resource management
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Challenges:
+* IAM permission issues → Fixed by creating proper IAM user
+* SSH timeout → Added correct inbound rules to Security Group
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Next Week:
+* VPC networking
+* S3 storage
+* IAM policies

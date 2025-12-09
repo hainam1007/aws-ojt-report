@@ -10,30 +10,62 @@ pre: " <b> 1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+## Overview
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+This worklog documents my 13-week internship journey at First Cloud Journey, where I developed comprehensive AWS cloud computing skills and completed two major projects: a serverless web application workshop and an AI-powered sign language translation application for the Hackathon.
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+## Program Duration & Structure
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Duration:** 13 weeks (November 2025 - January 2026)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Format:** Full-time internship with hands-on AWS training, practical labs, and project development
 
-**Week 4:** [Doing task C...](1.4-week4/)
+## Weekly Progress Summary
 
-**Week 5:** [Doing task D...](1.5-week5/)
+### Phase 1: AWS Fundamentals (Weeks 1-4)
+- **Week 1:** [Getting familiar with AWS basics and environment setup](1.1-week1/)
+- **Week 2:** [Deep dive into VPC networking, S3 storage, and IAM](1.2-week2/)
+- **Week 3:** [EC2 advanced features, Storage Gateway, and VM migration](1.3-week3/)
+- **Week 4:** [AWS security fundamentals, IAM policies, and resource tagging](1.4-week4/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+### Phase 2: Content Creation & Advanced Services (Weeks 5-8)
+- **Week 5:** [Blog translation project and AI game development](1.5-week5/)
+- **Week 6:** [RDS databases, distributed systems, and Hackathon MVP](1.6-week6/)
+- **Week 7:** [Data analytics with Glue, Athena, and QuickSight](1.7-week7/)
+- **Week 8:** [Knowledge review and Naver Clova Studio exploration](1.8-week8/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+### Phase 3: Project Development (Weeks 9-13)
+- **Week 9:** [Serverless web app with S3, CloudFront, and AI model integration](1.9-week9/)
+- **Week 10:** [GitLab CI/CD implementation and continuous translation features](1.10-week10/)
+- **Week 11:** [Hackathon MVP completion and workshop API development](1.11-week11/)
+- **Week 12:** [Hackathon Demo Day presentation and UI enhancements](1.12-week12/)
+- **Week 13:** [Workshop finalization with AWS IoT Core integration](1.13-week13/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+## Key Achievements
 
-**Week 9:** [Doing task I...](1.9-week9/)
+✅ **Technical Skills Developed:**
+- AWS core services (EC2, S3, VPC, RDS, Lambda, API Gateway)
+- Serverless architecture and CI/CD pipelines
+- Data analytics (Glue, Athena, QuickSight)
+- IoT device simulation and MQTT communication
+- AI/ML model integration
 
-**Week 10:** [Doing task L...](1.10-week10/)
+✅ **Projects Completed:**
+1. **Serverless Web Workshop:** Full-stack application with authentication, role-based access, and IoT integration
+2. **TalkSign Hackathon Project:** AI-powered Vietnamese Sign Language translation app using computer vision
 
-**Week 11:** [Doing task M...](1.11-week11/)
+✅ **Professional Development:**
+- Attended AWS Cloud Mastery Series events
+- Translated 3 technical AWS blogs to Vietnamese
+- Presented at Hackathon Demo Day
+- Completed Coursera courses on research methodologies
 
-**Week 12:** [Doing task N...](1.12-week12/)
+## Learning Approach
+
+Throughout the internship, I followed a structured learning path:
+1. **Theory:** Study AWS documentation and video tutorials
+2. **Practice:** Complete hands-on labs and exercises
+3. **Application:** Build real-world projects and solve practical problems
+4. **Review:** Regular knowledge consolidation and exam preparation
+
+This comprehensive 13-week program provided me with both foundational AWS knowledge and practical experience in building production-ready cloud applications.

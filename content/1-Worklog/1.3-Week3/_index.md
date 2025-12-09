@@ -5,53 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
+* Understand EC2 and S3 services in depth
+* Learn to import virtual machines to AWS
+* Export virtual machines from EC2 instance and AMI
+* Mount file sharing on on-premise machine
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks carried out:
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Date | Status |
+|-----|------|------|--------|
+| Mon | - Learn EC2 basics (instance types, user data, metadata) <br> - Study EC2 auto scaling (EFA/SR, Lightsail, MGN) | 11/18/2025 | ✅ Done |
+| Tue | - Create S3 bucket <br> - Upload objects <br> - Deploy web using S3 <br> - Accelerate static web with CloudFront | 11/19/2025 | ✅ Done |
+| Wed | - Create Storage Gateway <br> - Create File Shares <br> - Mount File Shares to on-premise machine <br> - Create backup plan <br> - Set up notifications | 11/20/2025 | ✅ Done |
+| Thu | - Learn S3 advanced (access point, storage class, static website & CORS, Glacier, Snow Family, Storage Gateway, Backup) | 11/21/2025 | ✅ Done |
+| Fri | - Import virtual machine to AWS <br> - Deploy instance from AMI <br> - Export VM from EC2 instance and AMI through S3 bucket | 11/22/2025 | ✅ Done |
 
+### Achievements:
+* ✅ Mastered EC2 instance types and scaling options
+* ✅ Created and configured S3 buckets for static website hosting
+* ✅ Deployed CloudFront distribution for content acceleration
+* ✅ Set up Storage Gateway for hybrid cloud storage
+* ✅ Successfully imported/exported virtual machines
 
-### Week 3 Achievements:
+### Key Learnings:
+* EC2 user data and metadata usage
+* S3 storage classes and cost optimization
+* CloudFront CDN configuration
+* Storage Gateway types (File, Volume, Tape)
+* VM import/export process via AWS CLI
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Challenges:
+* CORS configuration for S3 static website → Fixed policy settings
+* Storage Gateway connectivity issues → Adjusted security groups
+* VM import format errors → Converted to supported OVA format
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Next Week:
+* RDS database deployment
+* Load balancing with ELB
+* Auto Scaling groups

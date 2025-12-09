@@ -5,53 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
+* Complete labs of module 7
+* Complete assignment of Hackathon
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks carried out:
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Date | Status |
+|-----|------|------|--------|
+| Mon | - Review database concepts knowledge <br> - Do labs 35 and 40 | 12/16/2025 | ✅ Done |
+| Tue | - Learn about Agile (Scrum, Kanban) <br> - **Practice:** Write product vision and pitch | 12/17/2025 | ✅ Done |
+| Wed | - Do lab 60 and 70 <br> - **Practice:** Use AWS Glue to scan data in S3 <br> - Connect Amazon Athena to AWS Glue <br> - Connect Amazon QuickSight to Amazon Athena | 12/18/2025 | ✅ Done |
+| Thu | - **Practice:** Use SDK to create table, CRUD data in DynamoDB <br> - Build a database with data stored in S3 | 12/19/2025 | ✅ Done |
+| Fri | - Do labs 72 and 75 <br> - **Practice:** Use AWS Glue to visually profile, clean and transform raw data <br> - Build dashboard via QuickSight | 12/20/2025 | ✅ Done |
 
+### Achievements:
+* ✅ Successfully created product vision and pitch
+* ✅ Understood serverless data lake and analytics architecture (AWS Glue, Amazon Athena, Amazon QuickSight)
+* ✅ Designed and published interactive dashboards using Amazon QuickSight
+* ✅ Used Amazon Athena to analyze S3 data with SQL
 
-### Week 7 Achievements:
+### Key Learnings:
+* Agile methodologies (Scrum, Kanban)
+* AWS Glue for ETL operations
+* Athena for serverless SQL queries
+* QuickSight for business intelligence dashboards
+* DynamoDB SDK operations
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Challenges:
+* Glue crawler configuration → Fixed schema detection settings
+* Athena query optimization → Used partitioning and compression
+* QuickSight data source connection → Configured proper IAM permissions
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Next Week:
+* Lambda functions
+* API Gateway
+* Serverless application architecture

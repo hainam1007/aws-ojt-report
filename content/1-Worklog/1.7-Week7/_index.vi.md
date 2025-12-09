@@ -9,51 +9,41 @@ pre: " <b> 1.7. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 7:
+* Hoàn thành labs của module 7
+* Hoàn thành assignment Hackathon
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày | Trạng thái |
+|-----|-----------|------|------------|
+| Hai | - Ôn tập kiến thức database concepts <br> - Làm labs 35 và 40 | 16/12/2025 | ✅ Hoàn thành |
+| Ba | - Học về Agile (Scrum, Kanban) <br> - **Thực hành:** Viết product vision và pitch | 17/12/2025 | ✅ Hoàn thành |
+| Tư | - Làm lab 60 và 70 <br> - **Thực hành:** Dùng AWS Glue để scan data trong S3 <br> - Kết nối Amazon Athena với AWS Glue <br> - Kết nối Amazon QuickSight với Amazon Athena | 18/12/2025 | ✅ Hoàn thành |
+| Năm | - **Thực hành:** Dùng SDK để tạo table, CRUD data trong DynamoDB <br> - Xây dựng database với data lưu trong S3 | 19/12/2025 | ✅ Hoàn thành |
+| Sáu | - Làm labs 72 và 75 <br> - **Thực hành:** Dùng AWS Glue để profile, clean và transform raw data <br> - Xây dựng dashboard qua QuickSight | 20/12/2025 | ✅ Hoàn thành |
 
+### Kết quả đạt được:
+* ✅ Tạo thành công product vision và pitch
+* ✅ Hiểu kiến trúc serverless data lake và analytics (AWS Glue, Amazon Athena, Amazon QuickSight)
+* ✅ Thiết kế và publish interactive dashboards dùng Amazon QuickSight
+* ✅ Dùng Amazon Athena để phân tích S3 data với SQL
 
-### Kết quả đạt được tuần 7:
+### Bài học chính:
+* Phương pháp Agile (Scrum, Kanban)
+* AWS Glue cho ETL operations
+* Athena cho serverless SQL queries
+* QuickSight cho business intelligence dashboards
+* DynamoDB SDK operations
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thách thức:
+* Cấu hình Glue crawler → Sửa schema detection settings
+* Tối ưu Athena query → Dùng partitioning và compression
+* Kết nối QuickSight data source → Cấu hình IAM permissions phù hợp
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Tuần tới:
+* Lambda functions
+* API Gateway
+* Kiến trúc Serverless application
 
 

@@ -1,58 +1,46 @@
 ---
 title: "Worklog Tuần 12"
 date: 2025-07-09
-weight: 2
+weight: 4
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
 ### Mục tiêu tuần 12:
+* Tham dự đầy đủ hackathon demo day
+* Tiếp tục hoàn thành workshop
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày | Trạng thái |
+|-----|-----------|------|------------|
+| Hai | - Học Coursera <br> - Chuẩn bị cho hackathon presentation | 24/11/2025 | ✅ Hoàn thành |
+| Ba | - Present online tại hackathon demo day <br> - Tạo function và kết nối API với web (RoomList, RoomConfig) | 25/11/2025 | ✅ Hoàn thành |
+| Tư | - Tạo landing page <br> - Thay đổi UI cho dự án <br> - Tạo function UserList | 26/11/2025 | ✅ Hoàn thành |
+| Năm | - Học về deploy github page <br> - Thiết kế lại flow của dự án | 27/11/2025 | ✅ Hoàn thành |
+| Sáu | - Triển khai admin dashboard mới và sign up | 28/11/2025 | ✅ Hoàn thành |
 
+### Kết quả đạt được:
+* ✅ Present thành công tại hackathon demo day
+* ✅ Thiết kế lại thành công flow của dự án
+* ✅ Triển khai thành công admin dashboard mới và sign up
 
-### Kết quả đạt được tuần 12:
+### Bài học chính:
+* Kỹ năng presentation hackathon
+* Tích hợp API cho real-time applications
+* Deploy GitHub Pages
+* Patterns thiết kế admin dashboard
+* Tối ưu project flow
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thách thức:
+* Chuẩn bị hackathon presentation → Tạo demo script rõ ràng
+* Vấn đề timing kết nối API → Triển khai async handling phù hợp
+* Deploy GitHub Pages → Cấu hình build settings đúng
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Tổng kết:
+Hoàn thành tuần cuối với Hackathon presentation thành công và tiếp tục cải thiện workshop. Nâng cao dự án với UI/UX tốt hơn và tính năng admin.
 
 

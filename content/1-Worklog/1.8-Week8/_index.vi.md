@@ -9,51 +9,40 @@ pre: " <b> 1.8. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 8:
+* Ôn tập kiến thức từ modules 1 đến 7
+* Tìm hiểu về Naver Clova Studio
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày | Trạng thái |
+|-----|-----------|------|------------|
+| Hai | - Ôn tập kiến thức AWS (Cost Optimization, EC2 cơ bản) | 23/12/2025 | ✅ Hoàn thành |
+| Ba | - Tìm hiểu về Naver Clova Studio <br> - Khám phá ý tưởng cho Hackathon <br> - Ôn tập khái niệm EC2 | 24/12/2025 | ✅ Hoàn thành |
+| Tư | - Ôn tập S3 và Shared Responsibility Model | 25/12/2025 | ✅ Hoàn thành |
+| Năm | - Ôn tập data concepts <br> - Làm bài tập thực hành từ Notebooklm | 26/12/2025 | ✅ Hoàn thành |
+| Sáu | - Làm bài kiểm tra trên Notebooklm <br> - Ôn tập tất cả kiến thức từ modules 1 đến 7 | 27/12/2025 | ✅ Hoàn thành |
 
+### Kết quả đạt được:
+* ✅ Hiểu về khả năng và tính năng của Naver Clova Studio
+* ✅ Chọn thành công ý tưởng Hackathon (ứng dụng hỗ trợ người điếc giao tiếp với người khác)
+* ✅ Ôn tập xong tất cả kiến thức từ modules 1 đến 7
+* ✅ Hoàn thành các bài tập thực hành và kiểm tra
 
-### Kết quả đạt được tuần 8:
+### Bài học chính:
+* Các dịch vụ AI của Naver Clova Studio
+* Chiến lược tối ưu chi phí trên AWS
+* Ôn tập toàn diện AWS fundamentals
+* Kỹ thuật chuẩn bị và làm bài kiểm tra
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thách thức:
+* Chọn phạm vi dự án Hackathon → Tập trung vào accessibility features
+* Quản lý thời gian ôn tập → Tạo lịch ôn tập có cấu trúc
+* Chuẩn bị kiểm tra → Dùng Notebooklm cho practice tests
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Tuần tới:
+* Triển khai Hackathon
+* AWS services nâng cao
+* Phát triển dự án
 
 

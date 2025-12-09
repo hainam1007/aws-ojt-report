@@ -9,51 +9,41 @@ pre: " <b> 1.10. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 10:
+* Chuyển dự án sang gitlab
+* Cấu hình CI/CD cho dự án
+* Khám phá cách dịch liên tục các từ với model AI
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày | Trạng thái |
+|-----|-----------|------|------------|
+| Hai | - Tìm cách để model có thể dịch video dài với nhiều cử chỉ | 10/01/2025 | ✅ Hoàn thành |
+| Ba | - Chuyển dự án từ Github sang Gitlab <br> - Học cách sử dụng Gitlab <br> - Cấu hình CI/CD | 11/01/2025 | ✅ Hoàn thành |
+| Tư | - Triển khai sliding window trong be logic để dịch liên tục các từ | 12/01/2025 | ✅ Hoàn thành |
+| Năm | - Fix bugs và test web | 13/01/2025 | ✅ Hoàn thành |
+| Sáu | - Triển khai paused-based segmentation trong be | 14/01/2025 | ✅ Hoàn thành |
 
+### Kết quả đạt được:
+* ✅ Cấu hình thành công CI/CD cho gitlab tới S3 và Cloudfront
+* ✅ Triển khai hai cách dịch continuous words vào web
+* ✅ Test độ chính xác của hai cách
 
-### Kết quả đạt được tuần 10:
+### Bài học chính:
+* Cấu hình Gitlab CI/CD pipeline
+* Automated deployment tới S3 và CloudFront
+* Tối ưu AI model cho continuous translation
+* Triển khai sliding window algorithm
+* Kỹ thuật paused-based segmentation
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thách thức:
+* Setup Gitlab CI/CD pipeline → Cấu hình stages và deployment scripts phù hợp
+* Độ chính xác continuous translation → Triển khai sliding window approach
+* Hiệu năng model → Tối ưu với paused-based segmentation
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Tuần tới:
+* Presentation Hackathon cuối cùng
+* Tài liệu hóa dự án
+* Tối ưu hiệu năng
 
 
