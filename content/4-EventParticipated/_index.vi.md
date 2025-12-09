@@ -21,26 +21,50 @@ pre: " <b> 4. </b> "
 > * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
 > * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
 
+Trong quá trình thực tập tại First Cloud Journey, tôi đã tham gia hai sự kiện đào tạo AWS toàn diện giúp nâng cao đáng kể kỹ năng cloud computing và kiến thức thực tế của mình.
 
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+---
 
-### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+### [Event 1: Workshop AI/ML/GenAI trên AWS](4.1-event1/)  
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+**Tên sự kiện:** Workshop AI/ML/GenAI trên AWS  
+**Thời gian:** Thứ Bảy, 15 tháng 11, 2025 | 8:30 sáng – 12:00 trưa  
+**Địa điểm:** Văn phòng AWS Việt Nam  
+**Vai trò:** Người tham dự  
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+**Mô tả:**  
+Workshop thực hành về các dịch vụ AI của AWS (Rekognition, Polly, Transcribe, Comprehend) và Generative AI với Amazon Bedrock. Học prompt engineering, kiến trúc RAG, và xây dựng chatbot sử dụng foundation models.
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+**Kết quả đạt được:**
+- Có được kinh nghiệm thực tế với các dịch vụ AI/ML của AWS
+- Học các kỹ thuật prompt engineering để có phản hồi AI tốt hơn
+- Xây dựng chatbot hoạt động bằng Amazon Bedrock
+- Hiểu kiến trúc RAG cho các ứng dụng knowledge-base
 
+---
 
+### [Event 2: Đào tạo DevOps trên AWS](4.2-event2/)  
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+**Tên sự kiện:** Khóa đào tạo DevOps trên AWS  
+**Thời gian:** Thứ Hai, 17 tháng 11, 2025 | 8:30 sáng – 5:00 chiều  
+**Địa điểm:** Văn phòng AWS  
+**Vai trò:** Người tham dự  
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+**Mô tả:**  
+Đào tạo chuyên sâu cả ngày về các thực hành DevOps với AWS. Bao gồm CI/CD pipelines (CodeCommit, CodeBuild, CodeDeploy, CodePipeline), Infrastructure as Code (CloudFormation, CDK), container orchestration (ECS, EKS), và monitoring (CloudWatch, X-Ray).
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+**Kết quả đạt được:**
+- Xây dựng CI/CD pipelines hoàn chỉnh từ source đến production
+- Triển khai Infrastructure as Code sử dụng CDK và CloudFormation
+- Deploy ứng dụng được container hóa lên ECS Fargate
+- Cấu hình monitoring và observability toàn stack
+- Học các chiến lược triển khai (Blue/Green, Canary)
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+---
+
+## Tổng kết
+
+Cả hai sự kiện đều cung cấp kinh nghiệm thực hành vô giá với các dịch vụ AWS. Workshop AI/ML giới thiệu các công nghệ generative AI tiên tiến, trong khi đào tạo DevOps trang bị cho tôi các thực hành triển khai hiện đại. Cùng nhau, chúng tạo thành nền tảng toàn diện để xây dựng và vận hành ứng dụng cloud trên AWS.
+
+**Tác động chung:** Tăng sự tự tin về kỹ thuật, lộ trình chứng chỉ rõ ràng, và các kỹ năng thực tế có thể áp dụng ngay vào các dự án production.
 

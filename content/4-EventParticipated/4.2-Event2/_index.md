@@ -1,126 +1,223 @@
 ---
-title: "Event 2"
+title: "AI/ML/GenAI on AWS"
 date: 2025-07-09
 weight: 1
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
 {{% notice warning %}}
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: "AI/ML/GenAI on AWS Workshop"
 
-### Event Objectives
+### Event Information
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+**Event Name:** AI/ML/GenAI on AWS Workshop  
+**Date:** Saturday, November 15, 2025  
+**Time:** 8:30 AM – 12:00 PM  
+**Location:** AWS Vietnam Office  
+**Duration:** 3.5 hours
 
-### Speakers
+---
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### Workshop Overview
 
-### Key Highlights
+This hands-on workshop provided a comprehensive introduction to AWS's artificial intelligence and machine learning services, with a special focus on Generative AI using Amazon Bedrock. The session combined theory with practical demonstrations, helping participants understand how to build AI-powered applications on AWS.
 
-#### Identifying the drawbacks of legacy application architecture
+---
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+### Key Topics Covered
 
-#### Transitioning to modern application architecture – Microservices
+#### 1. AWS AI Services
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+The workshop introduced six core AWS AI services that solve common business problems:
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+**Amazon Rekognition** – Computer Vision
+- Analyze images and videos automatically
+- Detect faces and compare them
+- Identify objects, scenes, and activities
+- Filter inappropriate content
 
-#### Domain-Driven Design (DDD)
+**Amazon Polly** – Text-to-Speech
+- Convert written text into natural speech
+- Choose from various voices and languages
+- Create voice-enabled applications
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+**Amazon Transcribe** – Speech-to-Text
+- Convert audio to text automatically
+- Works in real-time or batch mode
+- Supports multiple languages
 
-#### Event-Driven Architecture
+**Amazon Comprehend** – Natural Language Processing
+- Analyze text to understand sentiment
+- Extract key information (names, places, dates)
+- Detect the language used
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+**Amazon Translate** – Language Translation
+- Translate text between languages using AI
+- Handle real-time or large batches
+- Use custom vocabulary for specific industries
 
-#### Compute Evolution
+**Amazon Lex** – Conversational AI
+- Build chatbots for customer service
+- Create voice assistants
+- Connect with other AWS services easily
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### 2. Generative AI with Amazon Bedrock
 
-#### Amazon Q Developer
+**What is Amazon Bedrock?**
+Amazon Bedrock is AWS's platform for building applications with foundation models (large AI models) without managing infrastructure.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+**Foundation Models Comparison**
 
-### Key Takeaways
+| Model | Strengths | Best For |
+|-------|-----------|----------|
+| **Claude** | Strong reasoning, safety | Complex tasks, content creation |
+| **Llama** | Open-source, customizable | Custom solutions, cost-sensitive |
+| **Titan** | AWS-native, reliable | General AWS integration |
 
-#### Design Mindset
+**Prompt Engineering Basics**
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+Learning how to write effective prompts to get better AI responses:
 
-#### Technical Architecture
+- **Clear instructions**: Be specific about what you want
+- **Chain-of-Thought**: Ask the AI to explain its reasoning step-by-step
+- **Few-shot learning**: Give examples of the output you want
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+Example:
+```
+Bad prompt: "Write about cats"
+Good prompt: "Write a 200-word article about cat behavior for pet owners, focusing on why cats knock things over"
+```
 
-#### Modernization Strategy
+**Retrieval-Augmented Generation (RAG)**
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+RAG helps AI models use your own data to generate more accurate answers:
 
-### Applying to Work
+1. Store your documents in a knowledge base
+2. When a user asks a question, find relevant documents
+3. Send both the question and documents to the AI
+4. Get an accurate, context-aware answer
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+**Bedrock Agents**
+
+Create AI agents that can:
+- Break down complex tasks into steps
+- Use tools and APIs to accomplish tasks
+- Make decisions based on information
+
+**Guardrails**
+
+Protect your AI applications with:
+- Content filtering (block harmful content)
+- Topic restrictions (stay on approved topics)
+- Sensitive information masking (hide personal data)
+
+#### 3. Live Demo
+
+The highlight was building a **Generative AI chatbot** using Amazon Bedrock:
+
+- Connected to a foundation model (Claude)
+- Added a knowledge base with company documents
+- Implemented guardrails for safety
+- Tested real conversations
+
+---
+
+### What I Learned
+
+#### Understanding AWS AI Services
+
+Before the workshop, I wasn't sure which AWS service to use for different AI tasks. Now I know:
+- Use **Rekognition** for analyzing images/videos
+- Use **Polly** to add voice to applications
+- Use **Comprehend** to understand customer feedback
+- Use **Bedrock** for custom AI applications
+
+#### Practical Prompt Engineering
+
+Learning prompt engineering was eye-opening. Small changes in how you ask questions can dramatically improve AI responses. The Chain-of-Thought technique is particularly useful for complex problems.
+
+#### RAG Architecture Benefits
+
+Understanding RAG showed me how to make AI applications that:
+- Use company-specific information
+- Stay up-to-date without retraining
+- Give more accurate and relevant answers
+
+#### Building Safe AI Applications
+
+The guardrails session taught me the importance of:
+- Preventing harmful content generation
+- Protecting user privacy
+- Keeping AI responses on-topic
+
+---
+
+### Skills Gained
+
+After this workshop, I can now:
+
+✅ Choose the right AWS AI service for different use cases  
+✅ Compare foundation models and select appropriate ones  
+✅ Write effective prompts for better AI responses  
+✅ Understand RAG architecture and when to use it  
+✅ Build a basic Generative AI chatbot with Bedrock  
+✅ Implement safety measures using Guardrails  
+
+---
+
+### How I'll Apply This
+
+#### Short-term Applications
+- Experiment with different foundation models on Bedrock
+- Practice prompt engineering techniques
+- Build a simple chatbot prototype for testing
+
+#### Long-term Goals
+- Propose an AI-powered feature for our current project
+- Implement RAG for a knowledge base search system
+- Integrate AWS AI services into existing applications
+
+---
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+The workshop was well-organized and beginner-friendly. The speakers explained complex concepts clearly and the hands-on demo made everything practical. Having 3.5 hours was perfect—enough time to cover important topics without feeling rushed.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+The AWS Vietnam office provided a great learning environment with good facilities and networking opportunities with other participants interested in AI/ML.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### What I Liked
+- Hands-on approach with live demos
+- Clear comparison of different AI services
+- Practical examples from real projects
+- Access to workshop materials for future reference
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Event Photos
+*Add your event photos here*
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+---
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+### Resources Provided
 
-#### Some event photos
-*Add your event photos here*  
+- AWS AI Services documentation links
+- Bedrock getting started guide
+- Prompt engineering cheat sheet
+- RAG implementation examples
+- Sample code from the chatbot demo
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+---
+
+### Conclusion
+
+This workshop gave me a solid foundation in AWS AI/ML services and Generative AI. The combination of service overview, prompt engineering, RAG architecture, and hands-on demos provided both breadth and depth of knowledge.
+
+I'm excited to explore these tools further and find ways to integrate AI capabilities into my projects. The workshop demonstrated that building AI applications on AWS is more accessible than I thought.
+
+**Rating: ⭐⭐⭐⭐⭐ (5/5)**
+
+---
+
+*For more information about AWS AI services, visit: [AWS AI Services](https://aws.amazon.com/ai/)*

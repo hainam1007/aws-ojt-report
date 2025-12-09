@@ -1,5 +1,5 @@
 ---
-title: "Internship Report"
+title: "OJT Report"
 date: 2025-07-09
 weight: 1
 chapter: false
@@ -13,7 +13,7 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Hải Nam
+&emsp; **Full Name:** Nguyễn Hải Nam
 
 &emsp; **Phone Number:** 0986510235
 
@@ -21,17 +21,17 @@ chapter: false
 
 &emsp; **University:** FPT University Ho Chi Minh
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Software Engineering
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** FCJ - FPTU
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Duration:** From 08/09/2025 to 09/12/2025
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](/images/avatar.jpg)
 
 ### Report Content
 

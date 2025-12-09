@@ -1,7 +1,7 @@
 ---
-title: "Event 2"
+title: "AI/ML/GenAI on AWS"
 date: 2025-07-09
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
@@ -10,116 +10,214 @@ pre: " <b> 4.2. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Báo cáo tổng kết: "Workshop AI/ML/GenAI trên AWS"
 
-### Mục Đích Của Sự Kiện
+### Thông tin sự kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+**Tên sự kiện:** Workshop AI/ML/GenAI trên AWS  
+**Ngày:** Thứ Bảy, 15 tháng 11, 2025  
+**Thời gian:** 8:30 sáng – 12:00 trưa  
+**Địa điểm:** Văn phòng AWS Việt Nam  
+**Thời lượng:** 3.5 giờ
 
-### Danh Sách Diễn Giả
+---
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### Tổng quan Workshop
 
-### Nội Dung Nổi Bật
+Workshop thực hành này cung cấp giới thiệu toàn diện về các dịch vụ trí tuệ nhân tạo và machine learning của AWS, với trọng tâm đặc biệt vào Generative AI sử dụng Amazon Bedrock. Buổi học kết hợp lý thuyết với các demo thực tế, giúp người tham gia hiểu cách xây dựng ứng dụng được hỗ trợ bởi AI trên AWS.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+---
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+### Các chủ đề chính được đề cập
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### 1. Dịch vụ AI của AWS
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Workshop giới thiệu sáu dịch vụ AI cốt lõi của AWS giải quyết các vấn đề kinh doanh phổ biến:
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+**Amazon Rekognition** – Thị giác máy tính
+- Phân tích hình ảnh và video tự động
+- Phát hiện khuôn mặt và so sánh chúng
+- Nhận dạng đối tượng, cảnh và hoạt động
+- Lọc nội dung không phù hợp
 
-#### Domain-Driven Design (DDD)
+**Amazon Polly** – Chuyển văn bản thành giọng nói
+- Chuyển đổi văn bản viết thành giọng nói tự nhiên
+- Lựa chọn từ nhiều giọng và ngôn ngữ
+- Tạo các ứng dụng có khả năng giọng nói
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+**Amazon Transcribe** – Chuyển giọng nói thành văn bản
+- Chuyển đổi âm thanh thành văn bản tự động
+- Hoạt động theo thời gian thực hoặc batch mode
+- Hỗ trợ nhiều ngôn ngữ
 
-#### Event-Driven Architecture
+**Amazon Comprehend** – Xử lý ngôn ngữ tự nhiên
+- Phân tích văn bản để hiểu cảm xúc
+- Trích xuất thông tin quan trọng (tên, địa điểm, ngày tháng)
+- Phát hiện ngôn ngữ được sử dụng
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+**Amazon Translate** – Dịch ngôn ngữ
+- Dịch văn bản giữa các ngôn ngữ bằng AI
+- Xử lý theo thời gian thực hoặc batch lớn
+- Sử dụng từ vựng tùy chỉnh cho các ngành cụ thể
 
-#### Compute Evolution
+**Amazon Lex** – AI hội thoại
+- Xây dựng chatbot cho dịch vụ khách hàng
+- Tạo trợ lý giọng nói
+- Kết nối với các dịch vụ AWS khác dễ dàng
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### 2. Generative AI với Amazon Bedrock
 
-#### Amazon Q Developer
+**Amazon Bedrock là gì?**
+Amazon Bedrock là nền tảng của AWS để xây dựng ứng dụng với foundation models (các mô hình AI lớn) mà không cần quản lý hạ tầng.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+**So sánh các Foundation Models**
 
-### Những Gì Học Được
+| Mô hình | Điểm mạnh | Tốt nhất cho |
+|---------|-----------|--------------|
+| **Claude** | Suy luận mạnh, an toàn | Tác vụ phức tạp, tạo nội dung |
+| **Llama** | Mã nguồn mở, có thể tùy chỉnh | Giải pháp tùy chỉnh, tiết kiệm chi phí |
+| **Titan** | AWS-native, đáng tin cậy | Tích hợp AWS chung |
 
-#### Tư Duy Thiết Kế
+**Cơ bản về Prompt Engineering**
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Học cách viết prompt hiệu quả để nhận phản hồi AI tốt hơn:
 
-#### Kiến Trúc Kỹ Thuật
+- **Hướng dẫn rõ ràng**: Cụ thể về những gì bạn muốn
+- **Chain-of-Thought**: Yêu cầu AI giải thích lý do từng bước
+- **Few-shot learning**: Đưa ra ví dụ về đầu ra bạn muốn
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Ví dụ:
+```
+Prompt xấu: "Viết về mèo"
+Prompt tốt: "Viết một bài báo 200 từ về hành vi mèo dành cho chủ nuôi thú cưng, tập trung vào lý do tại sao mèo đánh đổ đồ vật"
+```
 
-#### Chiến Lược Hiện Đại Hóa
+**Retrieval-Augmented Generation (RAG)**
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+RAG giúp các mô hình AI sử dụng dữ liệu của riêng bạn để tạo ra câu trả lời chính xác hơn:
 
-### Ứng Dụng Vào Công Việc
+1. Lưu trữ tài liệu của bạn trong knowledge base
+2. Khi người dùng đặt câu hỏi, tìm tài liệu liên quan
+3. Gửi cả câu hỏi và tài liệu đến AI
+4. Nhận câu trả lời chính xác, phù hợp với ngữ cảnh
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+**Bedrock Agents**
 
-### Trải nghiệm trong event
+Tạo các AI agent có thể:
+- Chia nhỏ tác vụ phức tạp thành các bước
+- Sử dụng công cụ và API để hoàn thành tác vụ
+- Đưa ra quyết định dựa trên thông tin
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+**Guardrails**
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+Bảo vệ ứng dụng AI của bạn với:
+- Lọc nội dung (chặn nội dung có hại)
+- Hạn chế chủ đề (giữ trong các chủ đề được phê duyệt)
+- Che giấu thông tin nhạy cảm (ẩn dữ liệu cá nhân)
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### 3. Demo Trực tiếp
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+Điểm nổi bật là xây dựng một **chatbot Generative AI** sử dụng Amazon Bedrock:
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- Kết nối với foundation model (Claude)
+- Thêm knowledge base với tài liệu công ty
+- Triển khai guardrails để đảm bảo an toàn
+- Kiểm thử các cuộc hội thoại thực tế
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+---
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+### Những gì tôi học được
+
+#### Hiểu về dịch vụ AI của AWS
+
+Trước workshop, tôi không chắc nên sử dụng dịch vụ AWS nào cho các tác vụ AI khác nhau. Bây giờ tôi biết:
+- Sử dụng **Rekognition** để phân tích hình ảnh/video
+- Sử dụng **Polly** để thêm giọng nói vào ứng dụng
+- Sử dụng **Comprehend** để hiểu phản hồi khách hàng
+- Sử dụng **Bedrock** cho ứng dụng AI tùy chỉnh
+
+#### Prompt Engineering thực tế
+
+Học prompt engineering là một trải nghiệm mở mang. Những thay đổi nhỏ trong cách bạn đặt câu hỏi có thể cải thiện đáng kể phản hồi AI. Kỹ thuật Chain-of-Thought đặc biệt hữu ích cho các vấn đề phức tạp.
+
+#### Lợi ích của kiến trúc RAG
+
+Hiểu về RAG cho tôi thấy cách tạo ứng dụng AI có thể:
+- Sử dụng thông tin đặc thù của công ty
+- Luôn cập nhật mà không cần đào tạo lại
+- Đưa ra câu trả lời chính xác và phù hợp hơn
+
+#### Xây dựng ứng dụng AI an toàn
+
+Phần về guardrails dạy tôi tầm quan trọng của:
+- Ngăn chặn tạo nội dung có hại
+- Bảo vệ quyền riêng tư người dùng
+- Giữ phản hồi AI đúng chủ đề
+
+---
+
+### Kỹ năng đạt được
+
+Sau workshop này, giờ tôi có thể:
+
+✅ Chọn dịch vụ AI AWS phù hợp cho các use case khác nhau  
+✅ So sánh các foundation model và lựa chọn mô hình phù hợp  
+✅ Viết prompt hiệu quả cho phản hồi AI tốt hơn  
+✅ Hiểu kiến trúc RAG và khi nào sử dụng nó  
+✅ Xây dựng chatbot Generative AI cơ bản với Bedrock  
+✅ Triển khai các biện pháp an toàn sử dụng Guardrails  
+
+---
+
+### Cách tôi sẽ áp dụng điều này
+
+#### Ứng dụng ngắn hạn
+- Thử nghiệm với các foundation model khác nhau trên Bedrock
+- Luyện tập các kỹ thuật prompt engineering
+- Xây dựng prototype chatbot đơn giản để kiểm thử
+
+#### Mục tiêu dài hạn
+- Đề xuất tính năng được hỗ trợ AI cho dự án hiện tại
+- Triển khai RAG cho hệ thống tìm kiếm knowledge base
+- Tích hợp các dịch vụ AI AWS vào ứng dụng hiện có
+
+---
+
+### Trải nghiệm sự kiện
+
+Workshop được tổ chức tốt và thân thiện với người mới bắt đầu. Các diễn giả giải thích các khái niệm phức tạp một cách rõ ràng và demo thực hành làm cho mọi thứ trở nên thực tế. Có 3.5 giờ là hoàn hảo—đủ thời gian để đề cập các chủ đề quan trọng mà không cảm thấy vội vã.
+
+Văn phòng AWS Việt Nam cung cấp một môi trường học tập tuyệt vời với cơ sở vật chất tốt và cơ hội kết nối với các người tham gia khác quan tâm đến AI/ML.
+
+#### Điều tôi thích
+- Cách tiếp cận thực hành với demo trực tiếp
+- So sánh rõ ràng các dịch vụ AI khác nhau
+- Ví dụ thực tế từ các dự án thực
+- Truy cập tài liệu workshop để tham khảo sau này
+
+#### Hình ảnh sự kiện
+*Thêm hình ảnh sự kiện của bạn tại đây*
+
+---
+
+### Tài nguyên được cung cấp
+
+- Links tài liệu dịch vụ AI AWS
+- Hướng dẫn bắt đầu với Bedrock
+- Cheat sheet prompt engineering
+- Ví dụ triển khai RAG
+- Code mẫu từ demo chatbot
+
+---
+
+### Kết luận
+
+Workshop này đã cho tôi nền tảng vững chắc về các dịch vụ AI/ML AWS và Generative AI. Sự kết hợp của tổng quan dịch vụ, prompt engineering, kiến trúc RAG và demo thực hành cung cấp cả chiều rộng và chiều sâu kiến thức.
+
+Tôi rất hào hứng khám phá các công cụ này sâu hơn và tìm cách tích hợp khả năng AI vào các dự án của mình. Workshop đã chứng minh rằng xây dựng ứng dụng AI trên AWS dễ tiếp cận hơn tôi nghĩ.
+
+**Đánh giá: ⭐⭐⭐⭐⭐ (5/5)**
+
+---
+
+*Để biết thêm thông tin về dịch vụ AI AWS, truy cập: [Dịch vụ AI AWS](https://aws.amazon.com/ai/)*
