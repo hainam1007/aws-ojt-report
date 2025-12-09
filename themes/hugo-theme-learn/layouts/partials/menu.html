@@ -30,18 +30,18 @@
         {{end}}
       </ul>
     </section>
-    {{end}} {{ if or .Site.IsMultilingual $showvisitedlinks }}
+    {{end}} {{ if or site.IsMultiLingual $showvisitedlinks }}
     <section id="prefooter">
       <hr />
       <ul>
-        {{ if and .Site.IsMultilingual (not
+        {{ if and site.IsMultiLingual (not
         .Site.Params.DisableLanguageSwitchingButton)}}
         <li>
           <a class="padding">
             <i class="fas fa-language fa-fw"></i>
             <div class="select-style">
               <select id="select-language" onchange="location = this.value;">
-                {{ $siteLanguages := .Site.Languages}} {{ $pageLang :=
+                {{ $siteLanguages := site.Languages}} {{ $pageLang :=
                 .Page.Lang}} {{ range .Page.AllTranslations }} {{ $translation
                 := .}} {{ range $siteLanguages }} {{ if eq $translation.Lang
                 .Lang }} {{ $selected := false }} {{ if eq $pageLang .Lang}}
