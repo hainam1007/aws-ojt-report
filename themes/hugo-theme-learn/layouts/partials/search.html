@@ -9,9 +9,9 @@
 <script type="text/javascript" src="{{" js/auto-complete.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end
     }}"></script>
 <script type="text/javascript">
-    { { if hugo.IsMultilingual} }
+    { { if site.IsMultilingual } }
     var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
-    { {else } }
+    { { else } }
     var baseurl = "{{.Site.BaseURL}}";
     { { end } }
 </script>
