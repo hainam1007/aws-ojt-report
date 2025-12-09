@@ -6,121 +6,170 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+⚠️ **Note:** The content below is my own summary and re‑framing of the AWS blog  
+**“Accelerate your AWS migration with AWS Training and Certification”**.  
+It is for reference only – please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# Accelerate your AWS migration with AWS Training and Certification
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
-
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+*Based on the blog by Srividhya Pallay, Chloe Gorgen, and Justin Lin (09 APR 2025).*
 
 ---
 
-## Architecture Guidance
+## 1. Why migration needs more than just technology
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+Moving workloads to **AWS Cloud** is a chance to:
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+- Improve performance and resilience  
+- Reduce infrastructure costs  
+- Enable long‑term innovation
 
-**The solution architecture is now as follows:**
+But many migrations fail or stall not because of tools, but because of:
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+- Misalignment among senior leaders  
+- Vague or shifting migration goals  
+- Teams that are unfamiliar with operating on the cloud
 
----
+Organizations that migrate successfully tend to have:
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+1. **Unified senior leadership** with clear direction and expectations.  
+2. **Concrete migration goals**, timelines, and next steps.  
+3. **Top‑down investment in training**, so people are confident working in the cloud.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
-
----
-
-## Technology Choices and Communication Scope
-
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+**AWS Training and Certification** provides targeted learning paths for each phase of a migration to build that confidence.
 
 ---
 
-## The Pub/Sub Hub
+## 2. Assess phase – understanding where you are
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+All migrations start with a deep look at the **current IT portfolio**:
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+- Applications and workloads  
+- Data stores and integrations  
+- Business goals, technical constraints, and current costs
 
----
+During this phase, organizations must:
 
-## Core Microservice
+- Choose appropriate migration strategies (from lift‑and‑shift to full refactor).  
+- Identify pain points and risks.  
+- Estimate cost and potential savings in the cloud.
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+### 2.1 Typical challenges
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+- Limited awareness of the **200+ AWS services** available for the target architecture.  
+- Lack of agreement on the overall migration approach.  
+- Poor visibility into dependencies between legacy systems.
 
----
+### 2.2 Helpful training resources
 
-## Front Door Microservice
+- **AWS Technical Essentials**  
+  - Introductory course for technical teams.  
+  - Covers core AWS services and architectures to help envision the target state.
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+- **AWS Cloud Essentials for Business Leaders**  
+  - Free course for executives, IT leaders, and LOB managers.  
+  - Builds a common understanding of cloud value, risks, and migration options.
 
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+With both technical and business‑oriented training, organizations can perform a more thorough and realistic assessment.
 
 ---
 
-## New Features in the Solution
+## 3. Mobilize phase – getting ready to move
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Once the assessment is complete, the focus shifts to **preparing people and environments** for migration.
+
+### 3.1 Key activities
+
+- Form a **core migration team** to coordinate efforts.  
+- Build a **comprehensive migration plan** with milestones and deliverables.  
+- Set up the **AWS landing zone** with secure networking, identity, and governance.  
+- Run **pilot migrations** to validate tools, processes, and assumptions.
+
+### 3.2 Common roadblocks
+
+- Limited hands‑on experience with AWS migration tools.  
+- Uncertainty about how to configure a secure and scalable cloud environment.
+
+### 3.3 Training to support mobilization
+
+- **AWS Migration Essentials**  
+  - Teaches how to discover, plan, execute, and track migrations  
+    using services like AWS Application Migration Service, AWS DMS, and AWS Migration Hub.  
+  - Designed for stakeholders across many roles.
+
+- **Migration Foundations Knowledge Badge Readiness Path**  
+  - Learning path for technical leaders.  
+  - Combines courses, knowledge checks, two self‑paced labs, and an assessment to earn a badge.  
+  - Focuses on simplifying and accelerating migrations using programs such as MAP and tools like Migration Evaluator.
+
+---
+
+## 4. Migrate and modernize phase – moving and improving workloads
+
+In this phase, organizations **actually move** applications, workloads, and data.
+
+### 4.1 Focus areas
+
+- Use insights from pilot projects to **scale up** migrations.  
+- Refine architectures to take advantage of:
+  - Elastic scaling  
+  - Managed databases  
+  - Serverless services  
+- Continuously monitor:
+  - Performance and availability  
+  - Cost and resource utilization  
+  - Security posture and compliance
+
+Migration is not a one‑time event. After initial cut‑over, teams can start **modernizing**:
+
+- Breaking monoliths into microservices  
+- Adopting serverless patterns  
+- Tuning infrastructure to fully leverage the cloud model
+
+### 4.2 Training for this phase
+
+- **Approach to Mainframe Migration and Modernization**  
+  - Free course introducing the value and methodology of moving mainframe workloads to AWS.  
+  - Designed for a broad range of roles and experience levels.
+
+- **Getting Started with AWS Mainframe Modernization Service**  
+  - Free course for mainframe practitioners and administrators.  
+  - Explains how to use AWS Mainframe Modernization to migrate and modernize critical applications.
+
+---
+
+## 5. Next steps – building a culture of continuous learning
+
+To sustain success after migration, organizations need an **ongoing learning strategy**:
+
+- Keep engineering teams up‑to‑date with new AWS capabilities.  
+- Strengthen skills for operating, optimizing, and evolving cloud workloads.  
+- Extend cloud literacy to finance, sales, and leadership.
+
+Recommended resources include:
+
+- **AWS Certified Cloud Practitioner**  
+  - Entry‑level certification that validates foundational AWS cloud concepts  
+    for technical and non‑technical roles.  
+
+- **AWS Skill Builder**  
+  - Online training platform with 600+ free courses and learning plans.  
+  - Team subscriptions help centralize learning programs for entire departments.
+
+Organizations can also connect with an **AWS sales specialist** to:
+
+- Plan migration roadmaps and target architectures.  
+- Learn about programs like **Migration Acceleration Program (MAP)** and funding options.  
+
+By combining structured training with the right programs and tools, teams can move from experimentation to a **confident, well‑governed cloud transformation**.
+
+---
+
+## 6. About the authors
+
+- **Chloe Gorgen** – Enterprise Solutions Architect at AWS, advising customers on security, analytics, data management, and automation. Passionate about youth engagement in cloud technologies.  
+
+- **Justin Lin** – Small & Medium Business Solutions Architect at AWS, focusing on solutions that apply generative AI, natural language processing, and business intelligence.  
+
+- **Srividhya Pallay** – Solutions Architect II at AWS based in Seattle, supporting small and medium‑sized businesses with a focus on generative AI and gaming workloads.

@@ -1,127 +1,48 @@
----
-title: "Blog 2"
-date: 2025-07-09
-weight: 1
-chapter: false
-pre: " <b> 3.2. </b> "
----
+Tăng tốc quá trình di chuyển lên AWS của bạn với AWS Training and Certification
+của Srividhya Pallay, Chloe Gorgen, và Justin Lin vào ngày 09 tháng 4 năm 2025 trong Amazon Database Migration Accelerator, AWS Application Migration Service, AWS Database Migration Service, AWS Migration Hub, AWS Server Migration Service, AWS Training and Certification, Enterprise Strategy, Mainframe Migration, Migration, Migration Acceleration Program (MAP), Migration Evaluator, Migration Portfolio Assessment, Self-serve Migration 
+Di chuyển lên đám mây (Cloud migration) mang đến cơ hội cho các tổ chức để nâng cao hiệu suất, giảm chi phí và thúc đẩy đổi mới với AWS. Tuy nhiên, di chuyển thành công đòi hỏi nhiều hơn là chỉ chuyên môn kỹ thuật—nó còn yêu cầu sự thống nhất trong tổ chức, chiến lược rõ ràng và các đội ngũ được đào tạo tốt. Trong khi kỹ năng kỹ thuật là rất quan trọng, những thách thức đáng kể nhất thường bắt nguồn từ văn hóa công ty và yếu tố con người.
+Các tổ chức di chuyển lên đám mây thành công đều chia sẻ ba yếu tố chính:
+Lãnh đạo cấp cao hợp nhất với định hướng rõ ràng và kỳ vọng thống nhất.
+Các mục tiêu di chuyển chi tiết với mốc thời gian và các bước tiếp theo.
+Một cam kết từ trên xuống dưới về việc đào tạo các đội ngũ để vận hành thoải mái trong môi trường đám mây.
+AWS Training and Certification cung cấp các tài nguyên cho từng giai đoạn di chuyển để giúp giải quyết các thách thức chung và tăng tốc hành trình của bạn. Trong bài đăng trên blog này, chúng tôi sẽ chia sẻ những tài nguyên đó, trang bị cho tổ chức của bạn kiến thức thiết yếu để vận hành cơ sở hạ tầng CNTT một cách hiệu quả và tự tin.
+Giai đoạn Đánh giá (Assess phase)
+Tất cả các cuộc di chuyển lên đám mây đều bắt đầu bằng việc hiểu danh mục CNTT hiện tại của bạn, bao gồm các ứng dụng, khối lượng công việc và dữ liệu. Trong giai đoạn đánh giá, các tổ chức đi sâu vào một số sáng kiến quan trọng: xác định các mục tiêu kinh doanh, xác định các chiến lược di chuyển phù hợp (từ việc chuyển đổi máy chủ đơn giản—rehosting—đến việc tái cấu trúc hoàn toàn—refactoring), hiểu các yêu cầu kỹ thuật và các điểm khó khăn, cũng như ước tính chi phí và khả năng tiết kiệm tiềm năng.
+Các thách thức chung bao gồm việc thiếu nhận thức về hơn 200 dịch vụ AWS có thể được sử dụng để thiết kế một cơ sở hạ tầng đích, thiếu sự thống nhất hoặc đồng thuận về một chiến lược di chuyển, và các phụ thuộc không rõ ràng của các hệ thống hiện có. Để giải quyết những thách thức này, AWS cung cấp các tài nguyên đào tạo sau:
+AWS Technical Essentials cung cấp một phần giới thiệu toàn diện về các sản phẩm, dịch vụ và giải pháp AWS để giúp các đội ngũ kỹ thuật hiểu các khả năng di chuyển.
+AWS Cloud Essentials for Business Leaders là một khóa học miễn phí có thể giúp tạo điều kiện cho các cuộc thảo luận có cơ sở về các tùy chọn di chuyển với các chuyên gia nghiệp vụ (Line of Business - LOB), các nhà lãnh đạo CNTT, và các giám đốc điều hành.
+Bằng cách cung cấp cả các tùy chọn đào tạo tập trung vào kỹ thuật và kinh doanh, AWS giúp các tổ chức xây dựng chuyên môn đa chức năng cần thiết cho một Giai đoạn đánh giá kỹ lưỡng và hiệu quả.
+Giai đoạn Huy động (Mobilize phase)
+Giai đoạn huy động liên quan đến việc đặt các tài nguyên, công cụ và quy trình cần thiết vào vị trí để thực hiện các cuộc di chuyển lên đám mây một cách hiệu quả và hiệu suất. Một khi bạn hoàn thành đánh giá của mình, bạn có thể chuẩn bị cả tổ chức và môi trường kỹ thuật cho việc di chuyển lên đám mây.
+Các thách thức chung mà các tổ chức phải đối mặt khi chuẩn bị cho Giai đoạn huy động bao gồm thiếu kinh nghiệm sử dụng các công cụ di chuyển và sự không chắc chắn về cấu hình môi trường đám mây. Để giảm thiểu những thách thức này, chúng tôi đề xuất các hành động sau:
+Thành lập một đội ngũ cốt lõi chịu trách nhiệm giám sát các nỗ lực di chuyển.
+Phát triển một kế hoạch di chuyển toàn diện với mốc thời gian, các cột mốc quan trọng và các kết quả bàn giao chính.
+Thiết lập môi trường đám mây và đảm bảo các cấu hình chính xác và an toàn.
+Bắt đầu di chuyển các ứng dụng thí điểm để kiểm tra chiến lược và quy trình di chuyển lên đám mây của bạn trước khi thực hiện di chuyển toàn diện.
+Để thực hiện một cuộc di chuyển thành công, đội ngũ di chuyển cốt lõi có thể tận dụng các tài nguyên AWS Training sau để nâng cao kỹ năng về các công nghệ di chuyển có liên quan:
+AWS Migration Essentials có thể giúp các bên liên quan trên tất cả các vai trò tìm hiểu các phương pháp để khám phá, lập kế hoạch, thực hiện và theo dõi các cuộc di chuyển bằng cách sử dụng các công cụ và dịch vụ AWS.
+Migration Foundations Knowledge Badge Readiness Path là một tài nguyên tuyệt vời cho các nhà lãnh đạo kỹ thuật để tìm hiểu cách đơn giản hóa và tăng tốc các cuộc di chuyển lên Đám mây AWS. Lộ trình học tập này bao gồm các khóa học, kiểm tra kiến thức, 2 phòng thí nghiệm tự học và một bài đánh giá cấp huy hiệu kiến thức.
+Giai đoạn Di chuyển và Hiện đại hóa (Migrate and modernize phase)
+Giai đoạn di chuyển và hiện đại hóa bao gồm việc di chuyển thực tế các ứng dụng, khối lượng công việc và dữ liệu. Giai đoạn này được xây dựng dựa trên việc lập kế hoạch và chuẩn bị đúng đắn trong các giai đoạn trước. Tuy nhiên, các thách thức chung trong giai đoạn này bao gồm việc hiểu cách tối ưu hóa hiệu suất ứng dụng, kết hợp khả năng mở rộng (scaling), quản lý chi phí và tuân thủ các thực tiễn tốt nhất về bảo mật và tuân thủ.
+Trong giai đoạn này, hãy thực hiện các bước sau để thiết lập tổ chức của bạn hướng tới thành công:
+Sử dụng những thông tin chi tiết và bài học kinh nghiệm từ các cuộc di chuyển thí điểm để di chuyển các ứng dụng và khối lượng công việc ở quy mô lớn.
+Tối ưu hóa kiến trúc ứng dụng để tận dụng các tính năng và dịch vụ tập trung vào đám mây.
+Giám sát hiệu suất, bảo mật và chi phí của môi trường đám mây mới của bạn, và điều chỉnh khi cần thiết.
+Liên tục cải tiến và đổi mới bằng cách áp dụng các công nghệ và khả năng đám mây mới khi chúng sẵn có. Giai đoạn này là liên tục, vì việc cải tiến liên tục là rất quan trọng đối với chuyển đổi đám mây. Một khi bạn đã di chuyển, bạn có thể tối ưu hóa và đổi mới để đạt được giá trị tối đa từ đám mây.
+Sau khi di chuyển ban đầu các ứng dụng và dữ liệu, bạn có thể bắt đầu các nỗ lực hiện đại hóa để tối ưu hóa cơ sở hạ tầng của mình cho Đám mây AWS, mở khóa các kỹ thuật như điện toán phi máy chủ (serverless computing), khả năng mở rộng liền mạch và phân bổ tài nguyên CNTT động cho các khối lượng công việc đang thay đổi. Các cuộc di chuyển lên đám mây thành công đòi hỏi các đội ngũ phải hiểu và quản lý môi trường AWS một cách hiệu quả, cho dù là tối ưu hóa ứng dụng sau di chuyển hay duy trì chúng như hiện tại.
+Các khóa đào tạo tùy chọn có liên quan trong giai đoạn này bao gồm:
+Approach to Mainframe Migration and Modernization là một khóa học miễn phí giới thiệu giá trị của việc di chuyển các ứng dụng mainframe và một phương pháp để thực hiện việc di chuyển ứng dụng mainframe. Khóa học này được thiết kế cho mọi cấp độ và vai trò.
+Getting Started with AWS Mainframe Modernization Service là một khóa học miễn phí dành cho các chuyên gia và quản trị viên mainframe đang chuẩn bị di chuyển và hiện đại hóa các ứng dụng mainframe.
+Các bước tiếp theo
+Thành công trong một cuộc di chuyển lên đám mây đòi hỏi một cam kết liên tục đối với việc học tập và phát triển từ tất cả các cấp trong tổ chức của bạn. Sau khi di chuyển ban đầu, đào tạo liên tục là điều cần thiết để đảm bảo đội ngũ kỹ thuật nội bộ của bạn duy trì và mở rộng chuyên môn về đám mây của họ. Kiến thức này rất quan trọng không chỉ để quản lý hiệu quả cơ sở hạ tầng đã di chuyển mà còn để tận dụng các khả năng của đám mây nhằm thúc đẩy các sáng kiến đổi mới và hiện đại hóa.
+Các khóa AWS Training and Certifications tùy chọn để đảm bảo sự thành công liên tục của môi trường đám mây của bạn bao gồm:
+AWS Certified Cloud Practitioner là một Chứng chỉ AWS cấp độ đầu vào cung cấp nền tảng cho các khái niệm, dịch vụ, và thuật ngữ của Đám mây AWS cho các cá nhân trong các vai trò kỹ thuật, quản lý, bán hàng, hoặc tài chính.
+AWS Skill Builder cung cấp quyền truy cập vào hơn 600 khóa học và kế hoạch học tập miễn phí. Phát triển hơn nữa chuyên môn về đám mây của đội ngũ bạn để chuyển đổi doanh nghiệp của bạn và tối đa hóa khoản đầu tư vào đám mây của bạn với Đăng ký theo Đội ngũ (Team subscription).
+Nếu bạn chưa kết nối với chuyên gia bán hàng AWS, bạn có thể liên hệ với chúng tôi để yêu cầu nói chuyện với một người. Các chuyên gia này có thể giúp bạn lập kế hoạch di chuyển bằng các công cụ liên quan và thông báo cho bạn về các cơ chế tài trợ tiềm năng.
+Bắt đầu hành trình di chuyển lên đám mây của tổ chức bạn ngay hôm nay bằng cách khám phá các tài nguyên AWS Training and Certification này, và trao quyền cho các đội ngũ của bạn với kiến thức và kỹ năng cần thiết để thúc đẩy một chuyển đổi đám mây thành công.
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Tác giả
+Chloe Gorgen là Kiến trúc sư Giải pháp Doanh nghiệp tại Amazon Web Services, tư vấn cho khách hàng AWS về các chủ đề khác nhau bao gồm bảo mật, phân tích, quản lý dữ liệu và tự động hóa. Chloe đam mê sự tham gia của giới trẻ vào công nghệ và hỗ trợ một số sáng kiến AWS để thúc đẩy sự quan tâm của giới trẻ đối với công nghệ dựa trên đám mây. Chloe có bằng Cử nhân Khoa học về Thống kê và Phân tích từ Đại học North Carolina tại Chapel Hill, với bằng phụ về Khoa học Dữ liệu.
+Justin Lin là Kiến trúc sư Giải pháp Doanh nghiệp Vừa và Nhỏ tại Amazon Web Services. Tận tâm thiết kế và phát triển các giải pháp sáng tạo nhằm trao quyền cho khách hàng, Justin đã dành thời gian của mình để thử nghiệm các ứng dụng trong AI tạo sinh (generative AI), xử lý ngôn ngữ tự nhiên và kinh doanh thông minh. Justin có bằng Cử nhân Khoa học về Khoa học Máy tính từ Đại học Washington Seattle.
+Srividhya Pallay là Kiến trúc sư Giải pháp II tại Amazon Web Services có trụ sở tại Seattle nơi cô hỗ trợ các doanh nghiệp vừa và nhỏ và chuyên về AI tạo sinh và trò chơi. Srividhya có bằng Cử nhân về Khoa học Dữ liệu Tính toán từ Michigan State University College of Engineering, với bằng phụ về Khoa học Máy tính và Khởi nghiệp.
 
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
-
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
-
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
-
----
-
-## Hướng dẫn kiến trúc
-
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
-
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
-
-**Kiến trúc giải pháp bây giờ như sau:**
-
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
-
----
-
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
-
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
-
----
-
-## Lựa chọn công nghệ và phạm vi giao tiếp
-
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
-
----
-
-## The pub/sub hub
-
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
-
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
-
----
-
-## Core microservice
-
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
-
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
-
----
-
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
-
----
-
-## Staging ER7 microservice
-
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
-
----
-
-## Tính năng mới trong giải pháp
-
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
