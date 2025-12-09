@@ -1,4 +1,4 @@
-baseURL = "https://thienluhoan.github.io/workshop-template/"
+baseURL = "https://hainam1007.github.io/aws-ojt-report/"
 relativeURLs = true
 canonifyURLs = true
 
@@ -13,9 +13,9 @@ home = [ "HTML", "RSS", "JSON"]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
   # Git hub repo link
-  editURL = ""
-  description = ""
-  author = "thienlh@thienlu.com"
+  editURL = "https://github.com/hainam1007/aws-ojt-report/edit/main/content"
+  description = "AWS OJT Internship Report"
+  author = "Nguyen Hai Nam"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -27,6 +27,12 @@ weight = 1
 languageName = "English"
 
 [[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub Repo"
+identifier = "github"
+url = "https://github.com/hainam1007/aws-ojt-report"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj/"
@@ -36,6 +42,12 @@ weight = 20
 title = "Báo cáo thực tập"
 weight = 2
 languageName = "Tiếng Việt"
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub Repo"
+identifier = "github"
+url = "https://github.com/hainam1007/aws-ojt-report"
+weight = 10
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
