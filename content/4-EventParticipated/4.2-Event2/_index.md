@@ -216,8 +216,6 @@ This workshop gave me a solid foundation in AWS AI/ML services and Generative AI
 
 I'm excited to explore these tools further and find ways to integrate AI capabilities into my projects. The workshop demonstrated that building AI applications on AWS is more accessible than I thought.
 
-**Rating: ⭐⭐⭐⭐⭐ (5/5)**
-
 ---
 
 *For more information about AWS AI services, visit: [AWS AI Services](https://aws.amazon.com/ai/)*

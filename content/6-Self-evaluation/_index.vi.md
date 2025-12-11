@@ -80,29 +80,6 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 - **Nhận thức ngành**: Nên cập nhật thường xuyên hơn các thông báo AWS, dịch vụ mới và xu hướng ngành
 - **Xây dựng mạng lưới**: Phải tích cực hơn trong việc xây dựng mối quan hệ chuyên môn trong cộng đồng AWS
 - **Lập kế hoạch nghề nghiệp**: Nên xác định mục tiêu nghề nghiệp dài hạn rõ ràng hơn và sắp xếp hoạt động học tập phù hợp
-
----
-
-### Kế hoạch hành động cải thiện
-
-**Ngắn hạn (1-2 tháng tới):**
-- Luyện tập giải thích một khái niệm kỹ thuật cho đối tượng phi kỹ thuật mỗi tuần
-- Dành 30 phút mỗi ngày để học có cấu trúc cho chứng chỉ AWS
-- Tình nguyện thuyết trình ít nhất một buổi chia sẻ kiến thức trong team
-- Ghi chép các bước khắc phục sự cố cho ít nhất 3 vấn đề gặp phải
-
-**Trung hạn (3-6 tháng tới):**
-- Hoàn thành chứng chỉ AWS Certified Solutions Architect - Associate
-- Chủ động một phần dự án nhỏ độc lập từ thiết kế đến triển khai
-- Viết và xuất bản 2-3 bài blog kỹ thuật về các bài học kinh nghiệm
-- Cải thiện thời gian phản hồi trong code review và thảo luận nhóm
-
-**Dài hạn (6-12 tháng tới):**
-- Đạt chứng chỉ AWS DevOps Engineer - Professional
-- Hướng dẫn các thực tập sinh junior hoặc thành viên team mới
-- Đóng góp cho các dự án open-source của cộng đồng AWS
-- Thuyết trình tại các meetup hoặc hội nghị bên ngoài về kinh nghiệm triển khai AWS
-
 ---
 
 ### Nhận xét chung

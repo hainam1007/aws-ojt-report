@@ -814,21 +814,6 @@ Văn phòng AWS cung cấp:
 
 ---
 
-## Đánh giá kỹ năng
-
-Sau khóa đào tạo này, tôi đánh giá năng lực của mình:
-
-| Lĩnh vực Kỹ năng | Trước | Sau | Mức độ Tự tin |
-|------------------|-------|-----|----------------|
-| Phát triển CI/CD Pipeline | ⭐ | ⭐⭐⭐⭐ | Sẵn sàng triển khai |
-| Infrastructure as Code | ⭐⭐ | ⭐⭐⭐⭐ | Có thể xây dựng IaC production |
-| Container Orchestration | ⭐ | ⭐⭐⭐ | Hiểu trade-offs |
-| Dịch vụ AWS DevOps | ⭐⭐ | ⭐⭐⭐⭐ | Có thể thiết kế giải pháp |
-| Monitoring & Observability | ⭐⭐ | ⭐⭐⭐⭐ | Có thể triển khai full stack |
-| Best Practices DevOps | ⭐⭐ | ⭐⭐⭐⭐ | Hiểu nguyên tắc |
-
----
-
 ## Tài nguyên được cung cấp
 
 ### Tài liệu & Hướng dẫn
@@ -927,8 +912,6 @@ Khóa đào tạo này đã nâng cao đáng kể năng lực DevOps của tôi.
 - Lộ trình cho phát triển chuyên môn
 
 Tôi rất háo hức áp dụng những kỹ năng này để chuyển đổi quy trình triển khai của chúng tôi và hướng đến chứng chỉ AWS DevOps Engineer.
-
-**Đánh giá Tổng thể: ⭐⭐⭐⭐⭐ (5/5)**
 
 **Tôi có khuyên dùng khóa đào tạo này không?** Chắc chắn—thiết yếu cho bất kỳ ai làm việc với AWS muốn triển khai thực hành DevOps hiện đại.
 

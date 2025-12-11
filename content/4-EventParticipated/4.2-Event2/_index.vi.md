@@ -216,7 +216,6 @@ Workshop này đã cho tôi nền tảng vững chắc về các dịch vụ AI/
 
 Tôi rất hào hứng khám phá các công cụ này sâu hơn và tìm cách tích hợp khả năng AI vào các dự án của mình. Workshop đã chứng minh rằng xây dựng ứng dụng AI trên AWS dễ tiếp cận hơn tôi nghĩ.
 
-**Đánh giá: ⭐⭐⭐⭐⭐ (5/5)**
 
 ---
 
